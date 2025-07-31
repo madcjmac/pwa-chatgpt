@@ -1,0 +1,27 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.5);
+  border-top: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+[data-theme='dark'] .bottom-nav {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid var(--text-color);
+}
